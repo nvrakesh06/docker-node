@@ -54,3 +54,6 @@ docker-compose up -d
 <!-- build image before building containers -->
 docker-compose up -d --build
 docker-compose down -v
+
+<!-- build using multiple file -->
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
